@@ -7,7 +7,18 @@
         public static int MinimumElementIn(List<int> intlist)
         {
             // Adapt the method body to make the corresponding unit test in 'TechnicalTestUnitTests' pass
-            return -1;
+            int min=9999;
+            int currentValue;
+            
+            for (int i=0;i < intlist.Count;i++)
+            {
+                currentValue = intlist[i];
+
+                if (currentValue < min)
+                    min = currentValue;
+
+            }
+            return min;
         }
     }
 }
